@@ -26,17 +26,12 @@ public class AutoWiringTest {
 
     @Test
     public void audio_file_should_not_be_null(){
-        Assert.assertNotNull(audioFile);
-        Assert.assertEquals("All Eyez on Me", audioFile.getAlbum());
-        Assert.assertEquals("California Love", audioFile.getTitle());
-        Assert.assertEquals("Tupac Shakur", audioFile.getArtist());
-        Assert.assertEquals(new Integer(240), audioFile.getDuration());
+       // Add your test code here
     }
 
     @Test
     public void media_player_should_display_mp3_information_when_press_play_button(){
-        Assert.assertNotNull(mediaPlayer);
-        mediaPlayer.playMedia();
+       // Add your test code here
         Assert.assertEquals("Playing California Love of album All Eyez on Me by Tupac Shakur\r\n", systemOutRule.getLog());
     }
 }
