@@ -6,8 +6,6 @@ import com.viseo.formation.sound.MP3PlayerWithConstructor;
 import com.viseo.formation.sound.MP3PlayerWithSetterMethod;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.test.context.ContextConfiguration;
-@ContextConfiguration(classes = MediaPlayerConfig.class)
 public class RunApplication {
 
     public static void main(String[] args) {

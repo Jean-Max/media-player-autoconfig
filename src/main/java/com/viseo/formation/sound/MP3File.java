@@ -2,7 +2,7 @@ package com.viseo.formation.sound;
 
 import org.springframework.stereotype.Component;
 
-@Component ("California Love")
+@Component
 public class MP3File implements IMediaFile {
 
     private String title = "California Love";
