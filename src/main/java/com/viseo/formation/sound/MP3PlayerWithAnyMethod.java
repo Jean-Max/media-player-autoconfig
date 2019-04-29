@@ -10,7 +10,7 @@ public class MP3PlayerWithAnyMethod implements IMediaPlayer {
     private MP3File audioFile;
 
     @Autowired
-    public void addMediaFile(IMediaFile IMediaFile) {
+    public void addMediaFile(MP3File audioFile) {
         this.audioFile = audioFile;
     }
 
