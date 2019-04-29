@@ -17,8 +17,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class AutoWiringTest {
 
     @Autowired
-    private MP3File audioFile;
-
     private MP3PlayerWithConstructor mediaPlayer;
 
     @Rule
@@ -26,11 +24,11 @@ public class AutoWiringTest {
 
     @Test
     public void audio_file_should_not_be_null(){
-        Assert.assertNotNull(audioFile);
-        Assert.assertEquals("All Eyez on Me", audioFile.getAlbum());
-        Assert.assertEquals("California Love", audioFile.getTitle());
-        Assert.assertEquals("Tupac Shakur", audioFile.getArtist());
-        Assert.assertEquals(new Integer(240), audioFile.getDuration());
+        Assert.assertNotNull(mediaPlayer.getAudioFile());
+        Assert.assertEquals("All Eyez on Me",mediaPlayer.getAudioFile().getAlbum());
+        Assert.assertEquals("California Love", mediaPlayer.getAudioFile().getTitle());
+        Assert.assertEquals("Tupac Shakur", mediaPlayer.getAudioFile().getArtist());
+        Assert.assertEquals(new Integer(240), mediaPlayer.getAudioFile().getDuration());
     }
 
     @Test

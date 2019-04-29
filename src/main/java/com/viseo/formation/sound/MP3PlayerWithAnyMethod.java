@@ -7,14 +7,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class MP3PlayerWithAnyMethod implements IMediaPlayer {
 
-    private IMediaFile IMediaFile;
+    private MP3File audioFile;
 
     @Autowired
     public void addMediaFile(IMediaFile IMediaFile) {
-        this.IMediaFile = IMediaFile;
+        this.audioFile = audioFile;
     }
 
     public void playMedia() {
-        this.IMediaFile.play();
+        this.audioFile.play();
     }
 }
