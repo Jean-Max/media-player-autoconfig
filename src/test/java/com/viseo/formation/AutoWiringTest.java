@@ -36,6 +36,6 @@ public class AutoWiringTest {
         Assert.assertNotNull(mediaPlayer);
         mediaPlayer.playMedia();
         Assert.assertEquals("Playing California Love of album All Eyez on Me by Tupac Shakur\r\n", systemOutRule.getLog());
-        //Assert.assertEquals("Playing California Love of album All Eyez on Me by Tupac Shakur\n", systemOutRule.getLog()); use \n for Unix-like OS.
+        // TODO:Use \n for Unix-like system.
     }
 }
