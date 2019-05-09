@@ -15,9 +15,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @RunWith(SpringJUnit4ClassRunner.class) // Allowed to have a Spring application context created when test starts
 @ContextConfiguration( classes = MediaPlayerConfig.class) // Tells Spring to load the configuration
 public class AutoWiringTest {
-
-    private MP3File audioFile;
-
+    
     private MP3PlayerWithConstructor mediaPlayer;
 
     @Rule
