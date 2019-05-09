@@ -16,7 +16,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration( classes = MediaPlayerConfig.class) // Tells Spring to load the configuration
 public class AutoWiringTest {
 
-    @Autowired
     private MP3File audioFile;
 
     private MP3PlayerWithConstructor mediaPlayer;
@@ -31,7 +30,9 @@ public class AutoWiringTest {
 
     @Test
     public void media_player_should_display_mp3_information_when_press_play_button(){
-       // Add your test code here
-        Assert.assertEquals("Playing California Love of album All Eyez on Me by Tupac Shakur\r\n", systemOutRule.getLog());
+        //TODO:Add your test code here
+
+        // Assert.assertEquals("Playing California Love of album All Eyez on Me by Tupac Shakur\r\n", systemOutRule.getLog()); TODO:Uncomment for window system
+        // Assert.assertEquals("Playing California Love of album All Eyez on Me by Tupac Shakur\n", systemOutRule.getLog()); TODO:Uncomment for Unix-like system
     }
 }
